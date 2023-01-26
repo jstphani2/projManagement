@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html lang="en">
+<head>
+<title>Emp form</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet"
+href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script
+src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script
+src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="container">
+    <div class="page-header text-center">
+        <h2>Employee form using the JPDB API</h2>
+    </div>
+    <form id="prjform" method="get" >
+        <div class="form-group">
+            <label>Project ID : </label>
+            <input type="text" id="prjid" class="form-control" onchange="getPrj()" >
+           </div>
+         <div class="form-group">
+            <label>Project Name: </label>
+            <input type="text" id="prjname" class="form-control" onchange="getPrj()" >
+           </div>
+         <div class="form-group">
+            <label>Assigned To : </label>
+            <input type="text" id="prjassignedto" class="form-control" onchange="getPrj()" >
+           </div>
+        <div class="form-group">
+            <label>Assignment Date : </label>
+            <input type="number" id="assignmentdate" class="form-control" onchange="getPrj()" >
+           </div> 
+        <div class="form-group">
+            <label>Deadline : </label>
+            <input type="number" id="Deadline" class="form-control" onchange="getPrj()" >
+        </div> 
+        <div class="form-group text-center">
+            <button type="button" class="btn btn-lg btn-primary" id="save" onclick="saveData()" disabled>Save</button>
+            <button type="button" class="btn btn-lg btn-primary" id="change" onclick="saveData()" disabled>change</button>
+            <button type="button" class="btn btn-lg btn-primary" id="reset" onclick="saveData()" disabled>reset</button>
+        </div>
+    </form>
+</div>
+
+    <script type="text/javascript" src="https://login2explore.com/jpdb/resources/js/0.0.3/jpdb-commons.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+</body>
+</html>
